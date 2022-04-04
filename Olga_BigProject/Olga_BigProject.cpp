@@ -3,8 +3,9 @@
 #include "Automobile.h"
 #include "Coaches.h"
 #include "Template.h"
-#include <vector>
-
+//#include <vector>
+#include <locale>
+#include "MyVector.h"
 
 
 using namespace std;
@@ -36,10 +37,17 @@ void CommitRandomTrips(vector <Vehicle*>& vehicles) {
 
 int main()
 {
+	setlocale(LC_ALL, "Russian");
 	srand(0);
+
+	//_________________________________
+	VectorClass planes;
+
+	
+	// ________________________________
    //Векторы для ханения экземляров ТС
 	//vector <Coach> coaches;
-	vector <Automobile> automobile;
+	/*vector <Automobile> automobile;
 	vector <Plane> planes;
 	vector <Coaches> coaches;
 
@@ -75,7 +83,7 @@ int main()
 	for (int i = 0; i < planes.size(); i++) {
 		planePointers.push_back(&planes[i]);
 	}
-
+	
 	//vector<Vehicle*> vehiclePointers = coachPointers + automobilePointers + planePointers;
 
 	CommitRandomTrips(coachPointers);
@@ -90,7 +98,7 @@ int main()
 	DisplayVehicles(coachPointers);
 	//DisplayVehicles(automobilePointers);
 	//DisplayVehicles(planePointers);
-
+	*/
 	
 }
  
